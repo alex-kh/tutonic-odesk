@@ -1,2 +1,24 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="row">
+  <div class="span6 offset3">
+    <h1>
+      <i class="icon-pencil" style="color: #49AFCD; font-size:46px;"></i>
+      <span style="color:#49AFCD">Sign Up</span> for <span style="color:#49AFCD">Tutonic</span>
+    </h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span6 offset3">
+    <div class="well clearfix center">
+      <%= image_tag (asset_path 'fb-connect-large.png') %>
+      <p><small>* We don't post anything without your permission</small></p>
+      <hr class="splitter left"><strong>OR</strong><hr class="splitter right">
+      <%= link_to 'Create an account using my e-mail address', '#' %>
+      <p class="login-bg">Already a Tutonic member? <%= link_to 'Login now', '#', class: 'btn btn-info btn-large disabled pull-right' %></p>
+    </div>
+  </div>
+</div>
+
+
+
+

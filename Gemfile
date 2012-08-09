@@ -11,7 +11,7 @@ group :development, :test do
   gem 'rspec-rails', '2.9.0'
 end
 
-gem 'jquery-rails', '2.0.0'
+gem 'jquery-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -21,7 +21,8 @@ group :assets do
   gem 'coffee-rails', '3.2.2'
   gem 'uglifier', '1.2.3'
 	# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer'
+  gem 'therubyracer'
+  gem 'font-awesome-rails'
 end
 
 group :test do

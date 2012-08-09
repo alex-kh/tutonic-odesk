@@ -2,12 +2,16 @@
 
 /* universal */
 
+$blue: #49AFCD;
+$gray: #999;
+
 html {
   overflow-y: scroll;
 }
 
 body {
-  padding-top: 60px;
+  background-image: image-url("tiny_grid.png");
+  padding-top: 110px;
 }
 
 section {
@@ -20,10 +24,10 @@ textarea {
 
 .center {
   text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
+ 
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
 /* typography */
@@ -45,7 +49,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #999;
+  color: $gray;
 }
 
 p {
@@ -56,16 +60,84 @@ p {
 #logo {
   float: left;
   margin-right: 10px;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
   padding-top: 9px;
-  font-weight: bold;
   line-height: 1;
 }
 
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
+.navbar-inner {
+  background-image: none;
+  background-color: #ccc;
+  min-height: 80px;
+}
+
+.navbar .nav > li > a {
+  color: #555;
+  margin: 20px 0;
+
+  &:hover {
+    color: #777;
+  }
+}
+
+.navbar .btn {
+  margin: 22px 0;
+  color: #555;
+}
+
+.center {
+  text-align: center;
+}
+
+.blue {
+  color: $blue;
+}
+
+small {
+  color: $gray;
+  font-size: 12px;
+}
+
+.gray {
+  color: $gray;
+}
+
+.splitter {
+  &.left {
+    float: left;
+  }
+  
+  &.right {
+    float: right;
+  }
+
+  width: 45%; 
+  margin: 9px 0;
+}
+
+a {
+  color: $blue;
+}
+
+.login-bg {
+  font-size: 16px;
+  margin-top: 25px; 
+  padding: 20px 13px;
+  text-align: left;
+  background-color: rgba(73, 175, 205, 0.5);
+  box-shadow: 1px 1px 10px 5px rgba(73, 175, 205, 0.6);
+
+  a {
+    margin-top: -10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+footer {
+  z-index: 1030;
+  margin: 130px 0 0 0;
+  color: #bbb;
+  background-color: #555;
+  padding: 20px 0px;
 }
